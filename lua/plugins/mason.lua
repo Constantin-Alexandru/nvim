@@ -32,12 +32,14 @@ return {
 				"html",
 				"cssls",
 				"emmet_ls",
+				"ltex",
 			},
 		})
 
 		mason_tool_installer.setup({
 			ensure_installed = {
 				"stylua",
+				"latexindent",
 				"prettier",
 				"eslint_d",
 			},

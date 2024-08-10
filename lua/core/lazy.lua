@@ -1,3 +1,7 @@
+
+
+-- Lazy.nvim setup
+
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
 	vim.fn.system({
@@ -11,6 +15,8 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+-- Setting the leader key
 
-require("lazy").setup({{ import = "user.plugins"}, { import = "user.plugins.lsp"}})
+require("helpers.keymap").set_leader(" ")
 
+require("lazy").setup("plugins")

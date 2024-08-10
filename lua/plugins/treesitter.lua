@@ -27,7 +27,12 @@ return {
 			-- ensure these language parsers are installed
 			ensure_installed = {
 				"lua",
+				"latex",
 				"html",
+				"css",
+				"javascript",
+				"typescript",
+				"react",
 			},
 			incremental_selection = {
 				enable = true,

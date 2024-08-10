@@ -7,15 +7,12 @@ return {
 		conform.setup({
 			formatters_by_ft = {
 				lua = { "stylua" },
+				latex = { "latexindent" },
+				html = { "prettier" },
+				css = { "prettier" },
 				javascript = { "prettier" },
 				typescript = { "prettier" },
-				javascriptreact = { "prettier" },
-				typescriptreact = { "prettier" },
-				react = { "prettier" },
-				css = { "prettier" },
-				html = { "prettier" },
-				json = { "prettier" },
-				yaml = { "prettier" },
+				react = { "react" },
 			},
 			format_on_save = {
 				lsp_fallback = true,
@@ -24,12 +21,12 @@ return {
 			},
 		})
 
-		vim.keymap.set({ "n", "v" }, "<C-s>", function()
+		require("helpers.keymap").map({ "n", "v" }, "<C-s>", function()
 			conform.format({
 				lsp_fallback = true,
 				async = false,
 				timeout_ms = 1000,
 			})
-		end, { desc = "Format file or range (in visual mode)" })
+		end, "Format file or range (in visual mode)")
 	end,
 }
