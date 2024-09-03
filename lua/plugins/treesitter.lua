@@ -32,7 +32,8 @@ return {
 				"css",
 				"javascript",
 				"typescript",
-				"react",
+				"astro",
+				"json",
 			},
 			incremental_selection = {
 				enable = true,

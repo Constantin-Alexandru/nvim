@@ -33,6 +33,9 @@ return {
 				"cssls",
 				"emmet_ls",
 				"ltex",
+				"astro",
+				"jsonls",
+				"clangd",
 			},
 		})
 
@@ -42,6 +45,10 @@ return {
 				"latexindent",
 				"prettier",
 				"eslint_d",
+				"markdownlint-cli2",
+				"jsonlint",
+				"clang-format",
+				"cpplint",
 			},
 		})
 	end,

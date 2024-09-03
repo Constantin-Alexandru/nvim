@@ -12,7 +12,12 @@ return {
 				css = { "prettier" },
 				javascript = { "prettier" },
 				typescript = { "prettier" },
-				react = { "react" },
+				json = { "prettier" },
+				react = { "prettier" },
+				astro = { "astro" },
+				markdown = { "markdownlint-cli2" },
+				c = { "clang-format" },
+				cpp = { "clang-format" },
 			},
 			format_on_save = {
 				lsp_fallback = true,
